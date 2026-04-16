@@ -9,6 +9,7 @@ body:
   attributes:
     label: Location
     options:
+    - Melbourne, Australia
   validations:
     required: true
 - type: input
