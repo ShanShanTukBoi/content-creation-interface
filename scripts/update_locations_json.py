@@ -19,7 +19,7 @@ def get_field(label):
     match = re.search(pattern, body)
     return match.group(1).strip() if match else ""
 
-location_name = get_field("Location name")
+location_name = get_field("New Location")
 lat = float(get_field("Latitude") or 0)
 lng = float(get_field("Longitude") or 0)
 

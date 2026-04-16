@@ -19,7 +19,7 @@ def get_field(label):
     match = re.search(pattern, body)
     return match.group(1).strip() if match else ""
 
-location_name = get_field("Location name")
+location_name = get_field("Location")
 title = get_field("Post title")
 text = get_field("Post text")
 
