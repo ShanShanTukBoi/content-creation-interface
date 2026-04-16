@@ -1,0 +1,48 @@
+import json
+from datetime import datetime
+from pathlib import Path
+
+root = Path(__file__).resolve().parent.parent
+locations_path = root / "data" / "2026" / "locations.json"
+posts_dir = root / "data" / "2026" / "posts"
+output_path = root / "data" / "2026" / "trip.json"
+
+# Load locations
+with open(locations_path, "r", encoding="utf-8") as f:
+    locations = json.load(f)
+
+# Initialize posts list on each location
+for location in locations:
+    location["posts"] = []
+
+# Create a lookup by location name
+location_lookup = {location["name"]: location for location in locations}
+
+# Load posts
+posts = []
+if posts_dir.exists():
+    for post_path in sorted(posts_dir.glob("*.json")):
+        with open(post_path, "r", encoding="utf-8") as f:
+            post = json.load(f)
+            posts.append(post)
+            location_name = post.get("location_name") or post.get("name")
+            if location_name and location_name in location_lookup:
+                location_lookup[location_name]["posts"].append(post)
+
+# Sort locations and posts by issue number / id
+locations.sort(key=lambda item: item["id"])
+for location in locations:
+    location["posts"].sort(key=lambda item: item.get("id", 0))
+
+master = {
+    "generated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+    "locations": locations,
+}
+
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(master, f, indent=2)
+
+total_posts = sum(len(location["posts"]) for location in locations)
+print(f"✅ Created master trip file: {output_path}")
+print(f"   locations: {len(locations)}")
+print(f"   posts: {total_posts}")
