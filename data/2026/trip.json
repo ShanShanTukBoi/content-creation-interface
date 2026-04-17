@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T07:23:19Z",
+  "generated_at": "2026-04-17T07:24:42Z",
   "locations": [
     {
       "id": 1,
@@ -55,6 +55,14 @@
       "name": "Torla-Ordesa, Spain",
       "lat": 42.6287,
       "lng": 0.1127,
+      "posts": []
+    },
+    {
+      "id": 7,
+      "index": 4,
+      "name": "Chamonix, France",
+      "lat": 45.9237,
+      "lng": 6.8694,
       "posts": []
     }
   ]

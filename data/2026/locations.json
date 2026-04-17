@@ -26,5 +26,12 @@
     "name": "Torla-Ordesa, Spain",
     "lat": 42.6287,
     "lng": 0.1127
+  },
+  {
+    "id": 7,
+    "index": 4,
+    "name": "Chamonix, France",
+    "lat": 45.9237,
+    "lng": 6.8694
   }
 ]

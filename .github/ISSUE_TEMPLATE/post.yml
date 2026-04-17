@@ -13,6 +13,7 @@ body:
     - Rome, Italy
     - Chianti, Italy
     - Torla-Ordesa, Spain
+    - Chamonix, France
   validations:
     required: true
 - type: input
