@@ -14,6 +14,10 @@ event_path = os.environ.get("GITHUB_EVENT_PATH")
 with open(event_path, "r") as f:
     event = json.load(f)
 
+from pprint import pprint
+
+pprint(event)
+
 issue = event["issue"]
 body = issue["body"]
 issue_number = issue["number"]
