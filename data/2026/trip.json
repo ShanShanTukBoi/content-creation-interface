@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T07:30:47Z",
+  "generated_at": "2026-04-17T07:31:54Z",
   "locations": [
     {
       "id": 1,
@@ -18,17 +18,6 @@
             "https://i.imgur.com/FDR5qbN.jpeg"
           ],
           "date": "2026-04-17T07:15:03Z"
-        },
-        {
-          "id": 11,
-          "location_name": "Melbourne, Australia",
-          "title": "Tour du Mont Blanc Day 3",
-          "text": "",
-          "photos": [
-            "https://i.imgur.com/Jmrq3mW.jpg",
-            "https://i.imgur.com/0ihbRFZ.jpg"
-          ],
-          "date": "2026-04-17T07:28:38Z"
         }
       ]
     },
@@ -107,6 +96,17 @@
             "https://i.imgur.com/7MYtLSN.jpg"
           ],
           "date": "2026-04-17T07:30:38Z"
+        },
+        {
+          "id": 11,
+          "location_name": "Chamonix, France",
+          "title": "Tour du Mont Blanc Day 3",
+          "text": "",
+          "photos": [
+            "https://i.imgur.com/Jmrq3mW.jpg",
+            "https://i.imgur.com/0ihbRFZ.jpg"
+          ],
+          "date": "2026-04-17T07:31:47Z"
         }
       ]
     }
