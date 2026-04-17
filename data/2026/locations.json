@@ -15,9 +15,9 @@
   },
   {
     "id": 5,
+    "index": 2,
     "name": "Chianti, Italy",
     "lat": 43.5831,
-    "lng": 11.3187,
-    "index": 2
+    "lng": 11.3187
   }
 ]

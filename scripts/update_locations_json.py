@@ -35,10 +35,10 @@ next_index = max((loc.get("index", loc.get("id", 0)) for loc in locations), defa
 
 data = {
     "id": issue_number,
+    "index": next_index,
     "name": location_name,
     "lat": lat,
     "lng": lng,
-    "index": next_index,
 }
 
 # --- Write file ---
