@@ -1,11 +1,11 @@
 {
   "id": 2,
   "location_name": "Melbourne, Australia",
-  "title": "This is a post with text and images!",
+  "title": "This is a post with text and images.",
   "text": "Melbourne post text",
   "photos": [
     "https://i.imgur.com/V8fL1JX.jpeg",
     "https://i.imgur.com/FDR5qbN.jpeg"
   ],
-  "date": "2026-04-16T22:25:15Z"
+  "date": "2026-04-17T07:15:03Z"
 }
