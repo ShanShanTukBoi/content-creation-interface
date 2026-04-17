@@ -5,5 +5,12 @@
     "name": "Melbourne, Australia",
     "lat": -37.8137,
     "lng": 144.9631
+  },
+  {
+    "id": "None",
+    "index": 1,
+    "name": "Rome, Italy",
+    "lat": 41.8967,
+    "lng": 12.4822
   }
 ]
