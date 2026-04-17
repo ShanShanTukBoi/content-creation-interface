@@ -1,6 +1,6 @@
 {
   "Title": "Europe 2024",
-  "generated_at": "2026-04-17T08:28:40Z",
+  "generated_at": "2026-04-17T21:28:46Z",
   "locations": [
     {
       "id": 1,
@@ -46,7 +46,18 @@
       "name": "Chianti, Italy",
       "lat": 43.5831,
       "lng": 11.3187,
-      "posts": []
+      "posts": [
+        {
+          "id": 12,
+          "title": "Hiking around Greve",
+          "text": "Yummy wine",
+          "photos": [
+            "https://i.imgur.com/onXNuMM.jpg",
+            "https://i.imgur.com/CPXzdvO.jpg"
+          ],
+          "date": "2026-04-17T21:28:38Z"
+        }
+      ]
     },
     {
       "id": 7,
