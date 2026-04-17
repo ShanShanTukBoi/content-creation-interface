@@ -19,5 +19,12 @@
     "name": "Chianti, Italy",
     "lat": 43.5831,
     "lng": 11.3187
+  },
+  {
+    "id": 6,
+    "index": 3,
+    "name": "Torla-Ordesa, Spain",
+    "lat": 42.6287,
+    "lng": 0.1127
   }
 ]

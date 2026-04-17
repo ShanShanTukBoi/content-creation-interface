@@ -12,6 +12,7 @@ body:
     - Melbourne, Australia
     - Rome, Italy
     - Chianti, Italy
+    - Torla-Ordesa, Spain
   validations:
     required: true
 - type: input
