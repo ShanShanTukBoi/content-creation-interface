@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-04-17T07:37:44Z",
+  "Title": "Europe 2024",
+  "generated_at": "2026-04-17T08:28:40Z",
   "locations": [
     {
       "id": 1,
@@ -10,7 +11,6 @@
       "posts": [
         {
           "id": 2,
-          "location_name": "Melbourne, Australia",
           "title": "This is a post with text and images.",
           "text": "Melbourne post text",
           "photos": [
@@ -30,7 +30,6 @@
       "posts": [
         {
           "id": "None",
-          "location_name": "Rome, Italy",
           "title": "A post from Rome",
           "text": "Some text written about Rome.",
           "photos": [
@@ -58,7 +57,6 @@
       "posts": [
         {
           "id": 9,
-          "location_name": "Chamonix, France",
           "title": "Tour du Mont Blanc Day 1",
           "text": "",
           "photos": [
@@ -69,7 +67,6 @@
         },
         {
           "id": 10,
-          "location_name": "Chamonix, France",
           "title": "Tour du Mont Blanc Day 2",
           "text": "Goats!",
           "photos": [
@@ -80,7 +77,6 @@
         },
         {
           "id": 11,
-          "location_name": "Chamonix, France",
           "title": "Tour du Mont Blanc Day 3",
           "text": "",
           "photos": [
@@ -100,7 +96,6 @@
       "posts": [
         {
           "id": 8,
-          "location_name": "Torla-Ordesa, Spain",
           "title": "Torla-Ordesa Town",
           "text": "Finally reunited con Josh and Stella",
           "photos": [

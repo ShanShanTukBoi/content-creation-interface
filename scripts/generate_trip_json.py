@@ -39,12 +39,19 @@ if posts_dir.exists():
             if location_name and location_name in location_lookup:
                 location_lookup[location_name]["posts"].append(post)
 
+# Remove location_name from posts since they're now grouped by location
+for location in locations:
+    for post in location["posts"]:
+        post.pop("location_name", None)
+        post.pop("name", None)
+
 # Sort locations by index when present, then by id
 locations.sort(key=lambda item: (item.get("index", item.get("id", 0)), item.get("id", 0)))
 for location in locations:
     location["posts"].sort(key=lambda item: (parse_iso_date(item.get("date")), item.get("id", 0)))
 
 master = {
+    "Title": "Europe 2024",
     "generated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
     "locations": locations,
 }
