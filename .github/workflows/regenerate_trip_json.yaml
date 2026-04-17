@@ -1,4 +1,4 @@
-name: Regenerate Trip JSON
+name: Manual regeneration
 
 on:
   workflow_dispatch:
@@ -23,10 +23,14 @@ jobs:
         run: |
           python scripts/generate_trip_json.py
 
+      - name: Update post template options
+        run: |
+          python scripts/update_post_template.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/2026/trip.json
-          git commit -m "Regenerated trip.json" || echo "No changes to commit"
+          git add data/2026/trip.json .github/ISSUE_TEMPLATE/post.yml
+          git commit -m "Manual rebuild" || echo "No changes to commit"
           git push
