@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T07:24:42Z",
+  "generated_at": "2026-04-17T07:25:46Z",
   "locations": [
     {
       "id": 1,
@@ -55,7 +55,18 @@
       "name": "Torla-Ordesa, Spain",
       "lat": 42.6287,
       "lng": 0.1127,
-      "posts": []
+      "posts": [
+        {
+          "id": 8,
+          "location_name": "Torla-Ordesa, Spain",
+          "title": "Torla-Ordesa Town",
+          "text": "Finally reunited con Josh and Stella",
+          "photos": [
+            "https://i.imgur.com/9GhqS6V.jpg"
+          ],
+          "date": "2026-04-17T07:25:36Z"
+        }
+      ]
     },
     {
       "id": 7,
