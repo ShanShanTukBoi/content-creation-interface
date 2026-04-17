@@ -18,6 +18,16 @@ for location in locations:
 # Create a lookup by location name
 location_lookup = {location["name"]: location for location in locations}
 
+def parse_iso_date(value):
+    if not value:
+        return datetime.min
+    if isinstance(value, str) and value.endswith("Z"):
+        value = value[:-1]
+    try:
+        return datetime.fromisoformat(value)
+    except ValueError:
+        return datetime.min
+
 # Load posts
 posts = []
 if posts_dir.exists():
@@ -29,10 +39,10 @@ if posts_dir.exists():
             if location_name and location_name in location_lookup:
                 location_lookup[location_name]["posts"].append(post)
 
-# Sort locations and posts by issue number / id
-locations.sort(key=lambda item: item["id"])
+# Sort locations by index when present, then by id
+locations.sort(key=lambda item: (item.get("index", item.get("id", 0)), item.get("id", 0)))
 for location in locations:
-    location["posts"].sort(key=lambda item: item.get("id", 0))
+    location["posts"].sort(key=lambda item: (parse_iso_date(item.get("date")), item.get("id", 0)))
 
 master = {
     "generated_at": datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
