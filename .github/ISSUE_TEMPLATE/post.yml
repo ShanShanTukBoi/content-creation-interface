@@ -10,6 +10,8 @@ body:
     label: Location
     options:
     - Melbourne, Australia
+    - Rome, Italy
+    - Chianti, Italy
   validations:
     required: true
 - type: input
